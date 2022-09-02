@@ -1,0 +1,18 @@
+extends default
+block content
+      div.page_content   
+            h4 Please enter the following information to apply for LCW ACM Club membership. You will be emailed a copy of your application.
+            form(method='POST', action='/apply_action').contact_form
+                  div.form-group
+                        label(for='name') Name:
+                        input(type='text', name='name', required)
+                  div.form-group
+                        label(for='email') Email:
+                        input(type='email', placeholder='name@email.com' name='email', required)
+                  div.form-group
+                        label(for='phone') Phone Number:
+                        input(type='tel', name='phoneNumber', placeholder='888 888 8888', pattern='[0-9]{3} [0-9]{3} [0-9]{4}', maxlength='12',  title='Ten digits code', required)
+                  div.form-group
+                        label(for= 'reason') Why do you want to become a member of the LCW ACM club?
+                        input(type='textarea' name='reason', required)
+                  input(type='submit', value='Submit')

@@ -1,0 +1,16 @@
+extends default
+block content
+    div.page_content
+        h1 Hi #{name}, 
+        h2
+        | We have received your application to the LCW ACM club and have emailed a confirmation to #{email}.
+        | We hope to get back to you within the week.
+        | A copy of your application can be found below:
+    div.page_content
+        h2
+        | Name: #{name}
+        | Email: #{email}
+        | Phone number: #{number}
+        | Why do you want to become a member of the LCW ACM club?
+        br
+        | #{reason}

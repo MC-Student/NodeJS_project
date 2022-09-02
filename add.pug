@@ -1,0 +1,18 @@
+extends default
+block content
+    
+    form(method="POST" action="/add_member").addMember
+        h4 Enter the information for the new club member: 
+        div.form-group
+            p Member name
+            input(type="text" name="name" placeholder="Member name")
+        div.form-group
+            p Membership start date
+            input(type="date" name="start_date" placeholder="Joined club on...")
+        div.form-group
+            p Student's major
+            input(type="text" name="major")
+        div.form-group
+            p Student's graduation year
+            input(type="text" name="grad_year")
+        input(type='submit', value='Submit')

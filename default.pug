@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/styles.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    main
+    div.flex_container
+      block header
+          header.page_title
+            img(src='/pictures/lcw_acm_logo.png').logo
+            |  #{title}
+          ul.navbar
+            li
+              a(href=`/home`).
+                Home
+            li
+              a(href = `/apply`).
+                Membership Application
+            li
+              a(href= `/members`).
+                Member Listing
+            li
+              a(href= `/add`).
+                Add a member 
+      block content
+      

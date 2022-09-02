@@ -1,0 +1,34 @@
+extends default
+block content
+
+  .page_content
+    -var members = [];
+    -members = list;
+    -total = totalMembers;
+    //-var numbers = [1, 2, 3];
+
+    table.total_members
+      tr
+        th Total members
+      tr
+        td=totalMembers
+
+    table.member_list
+      tr
+        th Name
+        th Start Date
+        th Major
+        th Graduation year
+      each m in members
+        tr
+          td=m.name
+          td=m.start_date
+          td=m.major
+          td=m.grad_year
+
+
+ 
+    
+    
+
+        
